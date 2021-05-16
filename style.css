@@ -1,6 +1,7 @@
-body{
-  background-color: rgb(249, 236, 239); /*uwu modora color*/
+/*not me just taking modora's color scheme*/
 
+body{
+  background-color: rgb(249, 236, 239); 
 }
 .idek{
   font-family: 'Work Sans', sans-serif;
@@ -13,19 +14,18 @@ body{
   padding: 5px;
 }
 #content{
-  /*min-height: 80%;*/
   overflow: auto;
 }
 #ugly{
   background-color: rgb(234,201,215);
   padding: 20px;
   color: white;
-  border: solid rgb(105, 105, 105) 1px;
+  border: solid rgb(105, 105, 105) 0.5px;
   max-width: 90%;
 }
 #send{
   background-color: white;
-  border: solid rgb(105, 105, 105) 1px;
+  border: solid rgb(105, 105, 105) 0.5px;
   height: 25px;
 }
 #send:hover{
