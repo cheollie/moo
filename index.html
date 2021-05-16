@@ -19,24 +19,5 @@
     <input type="text" id="content" class = "reee" name="content"><br><br>
     <button onclick="sendMessage(); document.getElementById('content').value = ''; " class = "idek" id="send">Send</button>
   </body>
-
-  <script>
-    function sendMessage() {
-      var request = new XMLHttpRequest();
-      request.open("POST", document.getElementById("token").value);
-
-      request.setRequestHeader('Content-type', 'application/json');
-
-      var params = {
-        username: document.getElementById("uname").value,
-        avatar_url: document.getElementById("pfp").value,
-        content: document.getElementById("content").value
-      }
-
-      request.send(JSON.stringify(params));
-    }
-    function clearinputbar() {
-      document.getElementById("content") = "";
-    }
-  </script>
+  <script src="script.js" type="text/javascript"></script>
 </html>
