@@ -9,14 +9,19 @@
   </head>
   <body>
     <h1 id='ugly' class = "idek">cholc's discord webhook thing</h1>
-    <label for="token" class = "idek">token url:<br></label>
+    <label for="token" class = "idek">token url:</label>
+    <label for="token" class = "idek" id = "smoltext">(go to channel settings > integrations > webhooks > new webhooks > copy link; works only if u have perms)<br></label>
     <input type="url" id="token" class = "reee" name="token"><br><br>
-    <label for="uname" class = "idek">username:<br></label>
+    <label for="uname" class = "idek">username:</label>
+    <label for="uname" class = "idek" id = "smoltext">(the name your webhook shows up as)<br></label>
     <input type="text" id="uname" class = "reee" name="uname"><br><br>
-    <label for="pfp" class = "idek">profile pic url:<br></label>
+    <label for="pfp" class = "idek">profile pic url:</label>
+    <label for="pfp" class = "idek" id = "smoltext">(image url for the webhook's profile pic)<br></label>
     <input type="text" id="pfp" class = "reee" name="pfp"><br><br>
-    <label for="content" class = "idek">message:<br></label>
-    <input type="text" id="content" class = "reee" name="content"><br><br>
+    <label for="content" class = "idek">message:</label>
+    <label for="content" class = "idek" id = "smoltext">(the message the webhook sends)<br></label>
+    <input type="text" id="content" class = "reee" name="content">
+    <div class = "idek" id = "smoltext"><br>note: use at own risk, please don't use to spam or mass ping, don't sue me if u get muted/banned/kicked, have fun :)<br><br></div>
     <button onclick="sendMessage(); document.getElementById('content').value = ''; " class = "idek" id="send">Send</button>
   </body>
   <br><br><hr><br>

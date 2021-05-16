@@ -10,6 +10,11 @@ function sendMessage() {
     content: document.getElementById("content").value
   }
 
-  request.send(JSON.stringify(params));
-  //alert("sent!");
+  if (document.getElementById("content").value != "") {
+    request.send(JSON.stringify(params));
+    alert("sent (if ur token url is correct at least-)");
+  }
+  else { 
+    alert("message can't be empty");
+  }
 }
