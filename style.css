@@ -2,6 +2,7 @@
 
 body{
   background-color: rgb(249, 236, 239); 
+  margin: 20px;
 }
 .idek{
   font-family: 'Work Sans', sans-serif;
@@ -31,4 +32,7 @@ body{
 #send:hover{
   background-color: rgb(234,201,215);
   color :white;
+}
+#smoltext{
+  font-size: 12px;
 }
