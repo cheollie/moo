@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&amp;display=swap" rel="stylesheet">
+    <title>cholc's discord webhook thing</title>
+  </head>
+  <body>
+    <h1 id='ugly' class = "idek">cholc's discord webhook thing</h1>
+    <label for="token" class = "idek">token url:<br></label>
+    <input type="text" id="token" class = "reee" name="token"><br><br>
+    <label for="uname" class = "idek">username:<br></label>
+    <input type="text" id="uname" class = "reee" name="uname"><br><br>
+    <label for="pfp" class = "idek">profile pic url:<br></label>
+    <input type="text" id="pfp" class = "reee" name="pfp"><br><br>
+    <label for="content" class = "idek">message:<br></label>
+    <input type="text" id="content" class = "reee" name="content"><br><br>
+    <button onclick="sendMessage(); document.getElementById('content').value = ''; " class = "idek" id="send">Send</button>
+  </body>
+
+  <script>
+    function sendMessage() {
+      var request = new XMLHttpRequest();
+      request.open("POST", document.getElementById("token").value);
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      var params = {
+        username: document.getElementById("uname").value,
+        avatar_url: document.getElementById("pfp").value,
+        content: document.getElementById("content").value
+      }
+
+      request.send(JSON.stringify(params));
+    }
+    function clearinputbar() {
+      document.getElementById("content") = "";
+    }
+  </script>
+</html>
