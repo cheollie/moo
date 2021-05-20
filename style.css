@@ -1,39 +1,47 @@
 /*not me just taking modora's color scheme*/
 
+:root {
+  --lpink: rgb(249, 236, 239); 
+  --dgray: rgb(105, 105, 105);
+  --dpink: rgb(234,201,215);
+}
+
 body{
-  background-color: rgb(249, 236, 239); 
+  background-color: var(--lpink);
   margin: 30px;
   margin-top: 40px;
 }
+
 .idek{
   font-family: 'Work Sans', sans-serif;
-  color: rgb(105, 105, 105);
+  color: var(--dgray);
 }
 .reee{
   min-width: 80%;
   font-family: 'Work Sans', sans-serif;
-  color: rgb(105, 105, 105);
+  color: var(--dgray);
   padding: 5px;
 }
 #content{
   overflow: auto;
 }
 #ugly{
-  background-color: rgb(234,201,215);
+  background-color: var(--dpink);
   padding: 20px;
   color: white;
-  border: solid rgb(105, 105, 105) 0.5px;
+  border: solid var(--dgray) 0.5px;
   max-width: 90%;
 }
 #send{
   background-color: white;
-  border: solid rgb(105, 105, 105) 0.5px;
+  border: solid var(--dgray) 0.5px;
   height: 25px;
 }
 #send:hover{
-  background-color: rgb(234,201,215);
+  background-color: var(--dpink);
   color :white;
 }
 #smoltext{
   font-size: 12px;
 }
+

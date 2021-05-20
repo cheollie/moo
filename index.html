@@ -22,8 +22,18 @@
     <label for="content" class = "idek">message:</label>
     <label for="content" class = "idek" id = "smoltext">(the message the webhook sends)<br></label>
     <input type="text" id="content" class = "reee" name="content">
-    <div class = "idek" id = "smoltext"><br>note: use at own risk, please don't use to spam or mass ping, don't sue me if u get muted/banned/kicked, have fun :)<br><br></div>
-    <button onclick="sendMessage(); document.getElementById('content').value = ''; " class = "idek" id="send">Send</button>
+    <br><br>
+
+    <label for="spamMode" class="idek">spam mode:</label>
+      <input type="checkbox" id="spamMode">
+      <div class = "idek" id = "smoltext">(removes the 'sent' alerts and doesn't clear the input bar if checked)</div>
+
+    <label class = "idek" id = "smoltext"><br>note: use at own risk, please don't use to spam or mass ping, don't sue me if u get muted/banned/kicked, have fun :)</label>
+      <div class = "idek" id = "smoltext">also, you won't be able to do @here or @everyone because i don't wanna cause chaos. you can try it tho :)</div>
+      <br>
+      <button onclick="sendMessage()" class = "idek" id="send">Send</button>
+
+
   </body>
   <br><br><hr><br>
   <div class = "idek">here's a random hedgehog to brighten your day ^-^<br><br></div>
