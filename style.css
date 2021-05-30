@@ -3,7 +3,7 @@
 :root {
   --lpink: rgb(249, 236, 239); 
   --dgray: rgb(105, 105, 105);
-  --dpink: rgb(234,201,215);
+  --dpink: rgb(234, 201, 215);
 }
 
 body{
@@ -12,36 +12,42 @@ body{
   margin-top: 40px;
 }
 
+label{
+ display: inline-block;
+}
+
 .idek{
   font-family: 'Work Sans', sans-serif;
   color: var(--dgray);
 }
+
+.smoltext{
+  font-size: 12px;
+  padding-bottom: 2px;
+}
+
 .reee{
   min-width: 80%;
   font-family: 'Work Sans', sans-serif;
   color: var(--dgray);
   padding: 5px;
 }
-#content{
-  overflow: auto;
-}
-#ugly{
+
+.ugly{
   background-color: var(--dpink);
   padding: 20px;
   color: white;
   border: solid var(--dgray) 0.5px;
   max-width: 90%;
 }
-#send{
+
+.send{
   background-color: white;
   border: solid var(--dgray) 0.5px;
   height: 25px;
 }
-#send:hover{
+
+.send:hover{
   background-color: var(--dpink);
   color :white;
 }
-#smoltext{
-  font-size: 12px;
-}
-
