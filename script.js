@@ -34,7 +34,7 @@ function sendMessage() {
   }
 
   if (spamMode.checked == false){
-    _content = '';
+    document.getElementById('content').value = '';
   }
 
 }
